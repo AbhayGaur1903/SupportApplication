@@ -1,0 +1,33 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2023-08-03 13:00:15.337287",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2023-08-07 19:07:46.375117",
+ "modified_by": "Administrator",
+ "module": "Support Application",
+ "name": "Support Manager",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\n  \"tabSupport EXP\".\"name\" AS \"Name\",\n  \"tabSupport EXP\".\"workflow_state\" AS \"Status\",\n  \"tabSupport EXP\".\"project\" AS \"Project Name\",\n  \"tabSupport EXP\".\"module\" AS \"Module Name\",\n  \"tabSupport EXP\".\"initialtion_datetime\" AS \"Initiation Datetime\",\n  \"tabSupport EXP\".\"redmine_url\" AS \"Redmine ID\",\n  \"tabSupport EXP\".\"task\" AS \"Task Type\",\n  \"tabSupport EXP\".\"description\" AS \"Task Description\",\n  \"tabSupport EXP\".\"developer\" AS \"Assigned Developer\",\n  \"tabSupport EXP\".\"actual_end_date\" AS \"Complete Date\",\n  \"tabSupport EXP\".\"actual_hours\" AS \"Hours\"\n  \nFROM\n  \"tabSupport EXP\"\n\n\n",
+ "ref_doctype": "Support EXP",
+ "report_name": "Support Manager",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "Expedien HOD"
+  },
+  {
+   "role": "Access Master"
+  },
+  {
+   "role": "All"
+  }
+ ]
+}

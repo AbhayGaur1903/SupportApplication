@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2023-08-10 15:31:10.658407",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2023-08-10 15:31:10.658407",
+ "modified_by": "Administrator",
+ "module": "Support Application",
+ "name": "datatable",
+ "owner": "Administrator",
+ "page_name": "datatable",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 1,
+ "title": "Data Table"
+}

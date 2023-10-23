@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2023-08-23 17:05:19.880751",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2023-08-23 17:05:19.880751",
+ "modified_by": "Administrator",
+ "module": "Support Application",
+ "name": "my-page",
+ "owner": "Administrator",
+ "page_name": "my-page",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Reports"
+}

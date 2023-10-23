@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-08-11 18:02:56.862245",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "low_priority",
+  "medium_priority",
+  "high_priority"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "low_priority",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Low Priority"
+  },
+  {
+   "columns": 2,
+   "fieldname": "medium_priority",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Medium Priority"
+  },
+  {
+   "columns": 2,
+   "fieldname": "high_priority",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "High Priority"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-11 18:29:24.208889",
+ "modified_by": "Administrator",
+ "module": "Support Application",
+ "name": "Ticket Status EXP",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

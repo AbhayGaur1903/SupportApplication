@@ -1,0 +1,303 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-08-11 18:21:09.133677",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "general_details_tab_tab",
+  "week_start_date",
+  "column_break_necan",
+  "week_end_date",
+  "project",
+  "section_break_gbxhr",
+  "add_completed_deliveries",
+  "cdt",
+  "add_upcoming_deliveries",
+  "udt",
+  "section_break_th8em",
+  "client_expectations",
+  "column_break_l9jzh",
+  "risks",
+  "ticket_status_tab_tab",
+  "tst",
+  "ticket_status_section",
+  "low_priority_tickets",
+  "column_break_t5z0n",
+  "medium_priority_tickets",
+  "column_break_6yhuz",
+  "high_priority_tickets",
+  "section_break_vgaae",
+  "total_tickets",
+  "column_break_yzs1y",
+  "resolved_tickets",
+  "pending_tickets",
+  "client_discussion_tab_tab",
+  "cldt",
+  "amended_from",
+  "ticket_status_checker",
+  "report_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_details_tab_tab",
+   "fieldtype": "Tab Break",
+   "label": "General Details Tab"
+  },
+  {
+   "fieldname": "week_start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Week Start Date"
+  },
+  {
+   "fieldname": "week_end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Week End Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cdt",
+   "fieldtype": "Table",
+   "label": "Completed Deliveries ",
+   "options": "Completed Deliveries EXP",
+   "read_only": 1
+  },
+  {
+   "fieldname": "udt",
+   "fieldtype": "Table",
+   "label": "Upcoming Deliveries",
+   "options": "Upcoming Deliveries EXP",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_th8em",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "client_expectations",
+   "fieldtype": "Small Text",
+   "label": "Client Expectations"
+  },
+  {
+   "fieldname": "risks",
+   "fieldtype": "Small Text",
+   "label": "Risks"
+  },
+  {
+   "fieldname": "ticket_status_tab_tab",
+   "fieldtype": "Tab Break",
+   "label": "Ticket Status Tab",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tst",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Ticket Status EXP"
+  },
+  {
+   "fieldname": "total_tickets",
+   "fieldtype": "Int",
+   "label": "Total Tickets",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_vgaae",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "resolved_tickets",
+   "fieldtype": "Int",
+   "label": "Resolved Tickets",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_l9jzh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pending_tickets",
+   "fieldtype": "Int",
+   "label": "Pending Tickets",
+   "read_only": 1
+  },
+  {
+   "fieldname": "client_discussion_tab_tab",
+   "fieldtype": "Tab Break",
+   "label": "Client Discussion Tab"
+  },
+  {
+   "fieldname": "cldt",
+   "fieldtype": "Table",
+   "options": "Client Discussion EXP"
+  },
+  {
+   "fieldname": "column_break_necan",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_gbxhr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Weekly Project Status EXP",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Project",
+   "options": "Project EXP"
+  },
+  {
+   "fieldname": "ticket_status_section",
+   "fieldtype": "Section Break",
+   "label": "Ticket Status"
+  },
+  {
+   "fieldname": "low_priority_tickets",
+   "fieldtype": "Data",
+   "label": "Low Priority Tickets ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_t5z0n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "medium_priority_tickets",
+   "fieldtype": "Data",
+   "label": "Medium Priority Tickets",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6yhuz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "high_priority_tickets",
+   "fieldtype": "Data",
+   "label": "High Priority Tickets",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_yzs1y",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "add_completed_deliveries",
+   "fieldtype": "Button",
+   "label": "ADD Completed Deliveries"
+  },
+  {
+   "fieldname": "add_upcoming_deliveries",
+   "fieldtype": "Button",
+   "label": "ADD Upcoming Deliveries"
+  },
+  {
+   "default": "0",
+   "fieldname": "ticket_status_checker",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "ticket_status_checker"
+  },
+  {
+   "fieldname": "report_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Report ID"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-09-13 18:41:23.518682",
+ "modified_by": "Administrator",
+ "module": "Support Application",
+ "name": "Weekly Project Status EXP",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Project Coordinator",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Expedien HOD",
+   "select": 1,
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "On Site User +",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Support Super User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "report_id"
+}

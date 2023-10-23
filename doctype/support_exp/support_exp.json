@@ -1,0 +1,379 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2023-06-27 15:49:33.121953",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "delete_draft",
+  "client_end_section",
+  "project",
+  "module",
+  "column_break_1ctzq",
+  "user",
+  "initialtion_datetime",
+  "reported_by",
+  "section_break_xydhd",
+  "onsite_user",
+  "subject",
+  "description",
+  "attach_file",
+  "attached_files",
+  "attachments",
+  "priority",
+  "ip_address",
+  "completion_attachments_section",
+  "developer_end_section",
+  "task",
+  "estimated_hours",
+  "actual_hours",
+  "redmine_url",
+  "developer",
+  "column_break_f4vfv",
+  "planned_start_date",
+  "planned_end_date",
+  "actual_start_date",
+  "actual_end_date",
+  "completed",
+  "completion_attachment",
+  "section_break_rmlkz",
+  "on_hold_remarks",
+  "rejection_comments_hod",
+  "amended_from",
+  "manager",
+  "sequence",
+  "ticket_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Subject"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Priority",
+   "options": "\nLow\nMedium\nHigh"
+  },
+  {
+   "fieldname": "ip_address",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "IP address"
+  },
+  {
+   "fieldname": "initialtion_datetime",
+   "fieldtype": "Datetime",
+   "label": "Creation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "client_end_section",
+   "fieldtype": "Section Break",
+   "label": "Support Ticket"
+  },
+  {
+   "columns": 3,
+   "fieldname": "module",
+   "fieldtype": "Select",
+   "label": "Module",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Project",
+   "options": "Project EXP",
+   "read_only": 1
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "label": "User ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "developer_end_section",
+   "fieldtype": "Section Break",
+   "label": "Developer End"
+  },
+  {
+   "fieldname": "task",
+   "fieldtype": "Link",
+   "label": "Task",
+   "options": "Task Type EXP"
+  },
+  {
+   "fieldname": "column_break_1ctzq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_xydhd",
+   "fieldtype": "Section Break",
+   "label": "Explain your Support Requirement"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state == 'Sent For Approval' || doc.workflow_state == 'Rejected'|| doc.workflow_state == 'Approved'|| doc.workflow_state == 'On Hold'|| doc.workflow_state == 'Rejected (Manager)'|| doc.workflow_state == 'Submitted';",
+   "fieldname": "rejection_comments_hod",
+   "fieldtype": "Small Text",
+   "label": "Rejection Comments ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_rmlkz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Support EXP",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "planned_start_date",
+   "fieldtype": "Date",
+   "label": "Planned Start Date"
+  },
+  {
+   "fieldname": "planned_end_date",
+   "fieldtype": "Date",
+   "label": "Planned End Date"
+  },
+  {
+   "fieldname": "column_break_f4vfv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual_start_date",
+   "fieldtype": "Date",
+   "label": "Actual Start Date"
+  },
+  {
+   "fieldname": "actual_end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Completion Date"
+  },
+  {
+   "fieldname": "redmine_url",
+   "fieldtype": "Data",
+   "label": "Redmine ID"
+  },
+  {
+   "fieldname": "estimated_hours",
+   "fieldtype": "Float",
+   "label": "Estimated Hours",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "actual_hours",
+   "fieldtype": "Float",
+   "label": "Actual Hours",
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "fieldname": "completed",
+   "fieldtype": "Check",
+   "label": "Completed By Developer"
+  },
+  {
+   "fieldname": "developer",
+   "fieldtype": "Link",
+   "label": "Developer",
+   "options": "User EXP"
+  },
+  {
+   "fieldname": "onsite_user",
+   "fieldtype": "Link",
+   "label": "OnSite User",
+   "options": "User EXP",
+   "read_only": 1
+  },
+  {
+   "fieldname": "attach_file",
+   "fieldtype": "Button",
+   "label": "Attach"
+  },
+  {
+   "fieldname": "attached_files",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Refresh attachments"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "HTML",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "completion_attachment",
+   "fieldtype": "Button",
+   "label": "Attach"
+  },
+  {
+   "fieldname": "completion_attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Completion Attachments"
+  },
+  {
+   "fieldname": "manager",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Manager"
+  },
+  {
+   "fieldname": "sequence",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Sequence"
+  },
+  {
+   "columns": 2,
+   "fieldname": "ticket_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Ticket ID"
+  },
+  {
+   "fieldname": "reported_by",
+   "fieldtype": "Data",
+   "label": "Reported By"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state == \"Draft\";\n",
+   "fieldname": "delete_draft",
+   "fieldtype": "Button",
+   "label": "Delete Draft"
+  },
+  {
+   "fieldname": "on_hold_remarks",
+   "fieldtype": "Small Text",
+   "label": "On Hold Comments",
+   "read_only": 1
+  }
+ ],
+ "force_re_route_to_default_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "make_attachments_public": 1,
+ "modified": "2023-09-26 16:32:28.021617",
+ "modified_by": "Administrator",
+ "module": "Support Application",
+ "name": "Support EXP",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Support User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Expedien HOD",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Department HOD",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "On Site User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "role": "Access Master",
+   "select": 1,
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Project Coordinator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Support Developer",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_preview_popup": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "ticket_id"
+}

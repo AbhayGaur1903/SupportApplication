@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2023-08-26 22:47:55.910702",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2023-08-26 22:47:55.910702",
+ "modified_by": "Administrator",
+ "module": "Support Application",
+ "name": "project-status",
+ "owner": "Administrator",
+ "page_name": "project-status",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 1,
+ "title": "Project Status Dashboard"
+}

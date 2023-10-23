@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-06-28 16:44:20.691126",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "manager",
+  "module",
+  "onsite"
+ ],
+ "fields": [
+  {
+   "fieldname": "manager",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Manager",
+   "options": "User EXP"
+  },
+  {
+   "fieldname": "module",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Module ",
+   "options": "Module EXP"
+  },
+  {
+   "fieldname": "onsite",
+   "fieldtype": "Link",
+   "label": "Onsite",
+   "options": "User EXP"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-03 11:52:24.055102",
+ "modified_by": "Administrator",
+ "module": "Support Application",
+ "name": "Manager Multiselect EXP",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:auto_id",
+ "creation": "2023-06-27 18:01:28.746722",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "mobile_number",
+  "email_address",
+  "department",
+  "project",
+  "employee_id",
+  "is_manager",
+  "developer",
+  "is_onsite",
+  "is_department_head",
+  "is_coordinator",
+  "is_developer",
+  "auto_id",
+  "project_manager"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Email Address"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Department"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Project",
+   "options": "Project EXP"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_manager",
+   "fieldtype": "Check",
+   "label": "Is Manager"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_department_head",
+   "fieldtype": "Check",
+   "label": "Is Department Head"
+  },
+  {
+   "fieldname": "auto_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Auto_id",
+   "unique": 1
+  },
+  {
+   "depends_on": "eval:doc.is_manager == 1;",
+   "fieldname": "project_manager",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Project Manager",
+   "options": "Project MultiSelect EXP"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_onsite",
+   "fieldtype": "Check",
+   "label": "is Onsite"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_developer",
+   "fieldtype": "Check",
+   "label": "Is Developer"
+  },
+  {
+   "fieldname": "developer",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Developer",
+   "options": "Developer Multiselect EXP"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_coordinator",
+   "fieldtype": "Check",
+   "label": "is Coordinator"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Data",
+   "label": "Employee ID"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-03 11:55:08.495162",
+ "modified_by": "Administrator",
+ "module": "Support Application",
+ "name": "User EXP",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
